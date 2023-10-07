@@ -6,4 +6,10 @@
                                                                                                                                                       
    The Simplex Algorithm is a mathematical method for solving optimization problems. In the context of Linear Programming Problems (LPP), it is used to find the best outcome in a mathematical model whose requirements are represented by linear relationships.                                       
                                                                                                                                                       
-   The algorithm solves LPPs by constructing a feasible solution at a vertex of the polytope and then walking along a path on the edges of the polytope to vertices with non-decreasing values of the objective function until an optimum is reached.                
+   The algorithm solves LPPs by constructing a feasible solution at a vertex of the polytope and then walking along a path on the edges of the polytope to vertices with non-decreasing values of the objective function until an optimum is reached.      
+
+## Tests
+
+  The example tests that the program have been tested on are in the tests.txt file of the repository. 
+
+   
