@@ -1,0 +1,43 @@
+1)
+C = np.array([1, 2])
+A = np.array([[1, 1, 1], [2, 1, 0]])
+b = np.array([3, 5])
+accuracy = 1e-6
+2)
+C = np.array([1, 2, 3, 4, 5])
+A = np.array([[1, 0, 0, 0, 0], [0, 1, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 1, 0]])
+b = np.array([1, 2, 3, 4])
+accuracy = 1e-6
+3)
+C = np.array([2, 3])
+A = np.array([[1, 1], [2, 1]])
+b = np.array([3, 5])
+accuracy = 1e-6
+4)
+C = np.array([2, 3])
+A = np.array([[1, 2],
+               [2, 1]])
+b = np.array([5, 4])
+accuracy = 1e-6
+5)
+C = np.array([1, -2])
+A = np.array([[1, -1], [2, 1]])
+b = np.array([1, 2])
+accuracy = 1e-6
+6)
+C = np.array([1, 2])
+A = np.array([[1, 1], [-1, -1]])
+b = np.array([3, -1])
+accuracy = 1e-6
+7)
+C = np.array([1, 1])
+A = np.array([[1, 2],
+              [2, 1]])
+b = np.array([5, 4])
+accuracy = 1e-6
+8)
+C = np.array([2, 3])
+A = np.array([[1, 1], [2, 1], [1, 0]])
+b = np.array([3, 5, 2])
+accuracy = 1e-6
+
