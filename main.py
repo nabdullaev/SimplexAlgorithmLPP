@@ -45,18 +45,18 @@ def simplex_method(C, A, b, accuracy):
     basis = []
 
     for i in range(len(new_matrix)):
-
-        for j in range(len(new_matrix[i])):
-            if new_matrix[i][j] == 1 and all((new_matrix[p][j] == 0 or p == i) for p in range(len(new_matrix))):
-                basis.append(j)
-                break
-        else:
-            if i in superplus_vars:
+        if i in superplus_vars:
+            for j in range(len(new_matrix[i])):
+                if new_matrix[i][j] == 1 and all((new_matrix[p][j] == 0 or p == i) for p in range(len(new_matrix))):
+                    basis.append(j)
+                    break
+            else:
                 raise MethodError("Simplex method can not be used to solve this task")
+        else:
             new_column = np.zeros(m)
             new_column[i] = 1
             new_matrix = np.column_stack((new_matrix, new_column))
-            basis.append(len(new_matrix[i]) - 1)
+            basis.append(len(new_matrix[0])-1)
 
     if len(basis) < m:
         raise MethodError("Simplex method can not be used to solve this task")
