@@ -117,16 +117,16 @@ accuracy = 1e-6
 
 # Read input variables
 print("Coefficients for the objective function as a 1D numpy array: (space - separator)")
-C = np.array(list(map(int, input().split(" "))))
+C = np.array(list(map(float, input().split(" "))))
 print("Number of inequalities:")
 n = int(input())
 A = []
 for i in range(n):
     print(f"Inequality #{i + 1}:")
-    A.append(list(map(int, input().split())))
+    A.append(list(map(float, input().split())))
 A = np.array(A)
 print("Right-hand side numbers as a 1D numpy array: (space - separator):")
-b = np.array(list(map(int, input().split(" "))))
+b = np.array(list(map(float, input().split(" "))))
 print("Accuracy:")
 accuracy = float(input())
 
